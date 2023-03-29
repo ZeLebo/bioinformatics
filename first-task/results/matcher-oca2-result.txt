@@ -1,11 +1,11 @@
 ########################################
 # Program: matcher
-# Rundate: Wed 29 Mar 2023 13:02:31
+# Rundate: Wed 29 Mar 2023 14:35:09
 # Commandline: matcher
 #    -auto
 #    -stdout
-#    -asequence emboss_matcher-I20230329-125800-0022-31074186-p1m.aupfile
-#    -bsequence emboss_matcher-I20230329-125800-0022-31074186-p1m.bupfile
+#    -asequence emboss_matcher-I20230329-134543-0638-8534127-p2m.aupfile
+#    -bsequence emboss_matcher-I20230329-134543-0638-8534127-p2m.bupfile
 #    -datafile EBLOSUM62
 #    -gapopen 14
 #    -gapextend 4
@@ -20,17 +20,17 @@
 #=======================================
 #
 # Aligned_sequences: 2
-# 1: 89177875-89295759
-# 2: c87142720-87073979
+# 1: 55889341-56186266
+# 2: c28099315-27719008
 # Matrix: EBLOSUM62
 # Gap_penalty: 14
 # Extend_penalty: 4
 #
-# Length: 71618
-# Identity:   32208/71618 (45.0%)
-# Similarity: 32208/71618 (45.0%)
-# Gaps:        4934/71618 ( 6.9%)
-# Score: 113941
+# Length: 313498
+# Identity:   137456/313498 (43.8%)
+# Similarity: 137456/313498 (43.8%)
+# Gaps:       24839/313498 ( 7.9%)
+# Score: 479707
 # 
 #
 #=======================================
