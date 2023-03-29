@@ -8,15 +8,15 @@
 ## OCA2
 
 ### Stretcher
-https://github.com/ZeLebo/bioinformatics/blob/1f8a9bc3a968c8b18479492d754ba1eafbc02a66/first-task/results/stretcher-oca2-result.txt#L20-L36
+https://github.com/ZeLebo/bioinformatics/blob/1f8a9bc3a968c8b18479492d754ba1eafbc02a66/first-task/results/stretcher-oca2-result.txt#L20-L33
 ### Mathcer
-https://github.com/ZeLebo/bioinformatics/blob/1f8a9bc3a968c8b18479492d754ba1eafbc02a66/first-task/results/matcher-oca2-result.txt#L20-L36
+https://github.com/ZeLebo/bioinformatics/blob/1f8a9bc3a968c8b18479492d754ba1eafbc02a66/first-task/results/matcher-oca2-result.txt#L20-L33
 ## TYR
 
 ### Stretcher
-https://github.com/ZeLebo/bioinformatics/blob/1f8a9bc3a968c8b18479492d754ba1eafbc02a66/first-task/results/stretcher-tyr-result.txt#L20-L36
+https://github.com/ZeLebo/bioinformatics/blob/1f8a9bc3a968c8b18479492d754ba1eafbc02a66/first-task/results/stretcher-tyr-result.txt#L20-L33
 ### Mathcer
-https://github.com/ZeLebo/bioinformatics/blob/1f8a9bc3a968c8b18479492d754ba1eafbc02a66/first-task/results/matcher-tyr-result.txt#L20-L36
+https://github.com/ZeLebo/bioinformatics/blob/1f8a9bc3a968c8b18479492d754ba1eafbc02a66/first-task/results/matcher-tyr-result.txt#L20-L33
 
 Вы видим, что в нашем случае более удачным оказался Mathcher. 
 
