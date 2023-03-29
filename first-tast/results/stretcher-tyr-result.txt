@@ -1,0 +1,35 @@
+########################################
+# Program: stretcher
+# Rundate: Wed 29 Mar 2023 12:57:45
+# Commandline: stretcher
+#    -auto
+#    -stdout
+#    -asequence emboss_stretcher-I20230329-125639-0222-58496849-p2m.aupfile
+#    -bsequence emboss_stretcher-I20230329-125639-0222-58496849-p2m.bupfile
+#    -datafile EBLOSUM62
+#    -gapopen 16
+#    -gapextend 4
+#    -aformat3 pair
+#    -sprotein1
+#    -sprotein2
+# Align_format: pair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: c87142720-87073979
+# 2: 89177875-89295759
+# Matrix: EBLOSUM62
+# Gap_penalty: 16
+# Extend_penalty: 4
+#
+# Length: 118031
+# Identity:   42397/118031 (35.9%)
+# Similarity: 42397/118031 (35.9%)
+# Gaps:       49435/118031 (41.9%)
+# Score: -27208
+# 
+#
+#=======================================

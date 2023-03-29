@@ -1,0 +1,35 @@
+########################################
+# Program: stretcher
+# Rundate: Wed 29 Mar 2023 12:52:45
+# Commandline: stretcher
+#    -auto
+#    -stdout
+#    -asequence emboss_stretcher-I20230329-123917-0206-49173179-p1m.aupfile
+#    -bsequence emboss_stretcher-I20230329-123917-0206-49173179-p1m.bupfile
+#    -datafile EDNAFULL
+#    -gapopen 16
+#    -gapextend 4
+#    -aformat3 pair
+#    -snucleotide1
+#    -snucleotide2
+# Align_format: pair
+# Report_file: stdout
+########################################
+
+#=======================================
+#
+# Aligned_sequences: 2
+# 1: c28099315-27719008
+# 2: 55889341-56186266
+# Matrix: EDNAFULL
+# Gap_penalty: 16
+# Extend_penalty: 4
+#
+# Length: 385552
+# Identity:   172928/385552 (44.9%)
+# Similarity: 172928/385552 (44.9%)
+# Gaps:       93870/385552 (24.3%)
+# Score: -231412
+# 
+#
+#=======================================
