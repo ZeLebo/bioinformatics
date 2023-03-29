@@ -11,6 +11,10 @@
 https://github.com/ZeLebo/bioinformatics/blob/1f8a9bc3a968c8b18479492d754ba1eafbc02a66/first-task/results/stretcher-oca2-result.txt#L20-L33
 ### Mathcer
 https://github.com/ZeLebo/bioinformatics/blob/1f8a9bc3a968c8b18479492d754ba1eafbc02a66/first-task/results/matcher-oca2-result.txt#L20-L33
+
+### Result
+Как мы видим, лучший результат дал Matcher (479707 vs -231412 финального score), также можно заметить, что у него сильно меньше Gap
+
 ## TYR
 
 ### Stretcher
@@ -18,7 +22,7 @@ https://github.com/ZeLebo/bioinformatics/blob/1f8a9bc3a968c8b18479492d754ba1eafb
 ### Mathcer
 https://github.com/ZeLebo/bioinformatics/blob/1f8a9bc3a968c8b18479492d754ba1eafbc02a66/first-task/results/matcher-tyr-result.txt#L20-L33
 
-Вы видим, что в нашем случае более удачным оказался Mathcher. 
+Как мы видим, лучший результат дал Matcher (113941 vs -27208 финального score), также можно заметить, что у него сильно меньше Gap (что на самом деле интересно, учитывая, что штраф за gap у stretcher'а выше, чем у matcher)
 
 
 ![alt-text](How-did-I-choose-phenotype.png "Proof")
