@@ -14,5 +14,6 @@
 3. Анализ выравнивания
 gene - ACE (https://www.ncbi.nlm.nih.gov/gene/1636)
 
-| gene | score | identity |
-| ---  | --- | --- |
+|number | gene | score | identity |
+|--- | ---  | --- | --- |
+|1| somth | 10 | 99 %|
