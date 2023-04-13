@@ -27,5 +27,5 @@ gene - ACE (https://www.ncbi.nlm.nih.gov/gene/1636)
 |9| VEGFA (Painted turtle) | 390 | 86% |
 |10| VEGFA (Reeves's turtle) | 381 | 86% |
 
-4. [!alt-text](result.clustalw)
+4. [result in clustal format](result.clustalw)
 
