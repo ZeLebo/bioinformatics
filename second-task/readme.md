@@ -43,4 +43,4 @@ gene - ACE [link to gene](https://www.ncbi.nlm.nih.gov/gene/1636)
 
 
 
-[!alt-text]("photo.jpg")
+[!alt-text](photo.jpg "Proof")
