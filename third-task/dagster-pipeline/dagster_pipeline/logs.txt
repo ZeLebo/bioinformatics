@@ -1,0 +1,223 @@
+Using temporary directory /mnt/c/Users/sarta/Proger/bioinformatics/third-task/dagster-pipeline/dagster_pipeline/tmpgi_vfmz8 for storage. This will be removed when ``dagster job execute`` exits.
+To persist information across sessions, set the environment variable DAGSTER_HOME to a directory to use.
+<dagster._core.definitions.composition.InvokedNodeOutputHandle object at 0x7f222a3e9a80>
+2023-05-25 03:01:25 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26682 - RUN_START - Started execution of run for "run_job".
+2023-05-25 03:01:25 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26682 - ENGINE_EVENT - Executing steps using multiprocess executor: parent process (pid: 26682)
+2023-05-25 03:01:25 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26682 - retrieve_files - STEP_WORKER_STARTING - Launching subprocess for "retrieve_files".
+<dagster._core.definitions.composition.InvokedNodeOutputHandle object at 0x7fa50e7b5510>
+2023-05-25 03:01:26 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26685 - STEP_WORKER_STARTED - Executing step "retrieve_files" in subprocess.
+2023-05-25 03:01:26 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26685 - retrieve_files - RESOURCE_INIT_STARTED - Starting initialization of resources [io_manager].
+2023-05-25 03:01:26 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26685 - retrieve_files - RESOURCE_INIT_SUCCESS - Finished initialization of resources [io_manager].
+2023-05-25 03:01:26 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26685 - LOGS_CAPTURED - Started capturing logs in process (pid: 26685).
+2023-05-25 03:01:26 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26685 - retrieve_files - STEP_START - Started execution of step "retrieve_files".
+2023-05-25 03:01:26 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26685 - retrieve_files - STEP_OUTPUT - Yielded output "result" of type "dict". (Type check passed).
+2023-05-25 03:01:26 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - retrieve_files - Writing file at: /mnt/c/Users/sarta/Proger/bioinformatics/third-task/dagster-pipeline/dagster_pipeline/tmpgi_vfmz8/storage/3382e4b4-8cfc-4b79-8853-eb89af840fcf/retrieve_files/result
+2023-05-25 03:01:26 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26685 - retrieve_files - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2023-05-25 03:01:26 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26685 - retrieve_files - STEP_SUCCESS - Finished execution of step "retrieve_files" in 154ms.
+2023-05-25 03:01:27 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26682 - fastqc - STEP_WORKER_STARTING - Launching subprocess for "fastqc".
+<dagster._core.definitions.composition.InvokedNodeOutputHandle object at 0x7f8ec85b5510>
+2023-05-25 03:01:27 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26693 - STEP_WORKER_STARTED - Executing step "fastqc" in subprocess.
+2023-05-25 03:01:27 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26693 - fastqc - RESOURCE_INIT_STARTED - Starting initialization of resources [io_manager].
+2023-05-25 03:01:27 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26693 - fastqc - RESOURCE_INIT_SUCCESS - Finished initialization of resources [io_manager].
+2023-05-25 03:01:27 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26693 - LOGS_CAPTURED - Started capturing logs in process (pid: 26693).
+2023-05-25 03:01:28 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26693 - fastqc - STEP_START - Started execution of step "fastqc".
+2023-05-25 03:01:28 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - fastqc - Loading file from: /mnt/c/Users/sarta/Proger/bioinformatics/third-task/dagster-pipeline/dagster_pipeline/tmpgi_vfmz8/storage/3382e4b4-8cfc-4b79-8853-eb89af840fcf/retrieve_files/result
+2023-05-25 03:01:28 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26693 - fastqc - LOADED_INPUT - Loaded input "data" using input manager "io_manager", from output "result" of step "retrieve_files"
+2023-05-25 03:01:28 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26693 - fastqc - STEP_INPUT - Got input "data" of type "dict". (Type check passed).
+2023-05-25 03:01:28 +0700 - dagster - INFO - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - fastqc - running fastqc on fastq file
+Started analysis of SRR24502286.fastq
+Approx 5% complete for SRR24502286.fastq
+Approx 10% complete for SRR24502286.fastq
+Approx 20% complete for SRR24502286.fastq
+Approx 25% complete for SRR24502286.fastq
+Approx 35% complete for SRR24502286.fastq
+Approx 40% complete for SRR24502286.fastq
+Approx 50% complete for SRR24502286.fastq
+Approx 55% complete for SRR24502286.fastq
+Approx 65% complete for SRR24502286.fastq
+Approx 70% complete for SRR24502286.fastq
+Approx 75% complete for SRR24502286.fastq
+Approx 85% complete for SRR24502286.fastq
+Approx 90% complete for SRR24502286.fastq
+Analysis complete for SRR24502286.fastq
+2023-05-25 03:01:34 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26693 - fastqc - STEP_OUTPUT - Yielded output "result" of type "dict". (Type check passed).
+2023-05-25 03:01:34 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - fastqc - Writing file at: /mnt/c/Users/sarta/Proger/bioinformatics/third-task/dagster-pipeline/dagster_pipeline/tmpgi_vfmz8/storage/3382e4b4-8cfc-4b79-8853-eb89af840fcf/fastqc/result
+2023-05-25 03:01:34 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26693 - fastqc - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2023-05-25 03:01:34 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26693 - fastqc - STEP_SUCCESS - Finished execution of step "fastqc" in 6.33s.
+2023-05-25 03:01:34 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26682 - make_reference - STEP_WORKER_STARTING - Launching subprocess for "make_reference".
+2023-05-25 03:01:34 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26682 - rename_output - STEP_WORKER_STARTING - Launching subprocess for "rename_output".
+<dagster._core.definitions.composition.InvokedNodeOutputHandle object at 0x7f29be7ad510>
+<dagster._core.definitions.composition.InvokedNodeOutputHandle object at 0x7f04da3ad510>
+2023-05-25 03:01:35 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26733 - STEP_WORKER_STARTED - Executing step "rename_output" in subprocess.
+2023-05-25 03:01:35 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26732 - STEP_WORKER_STARTED - Executing step "make_reference" in subprocess.
+2023-05-25 03:01:35 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26733 - rename_output - RESOURCE_INIT_STARTED - Starting initialization of resources [io_manager].
+2023-05-25 03:01:35 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26732 - make_reference - RESOURCE_INIT_STARTED - Starting initialization of resources [io_manager].
+2023-05-25 03:01:35 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26733 - rename_output - RESOURCE_INIT_SUCCESS - Finished initialization of resources [io_manager].
+2023-05-25 03:01:35 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26732 - make_reference - RESOURCE_INIT_SUCCESS - Finished initialization of resources [io_manager].
+2023-05-25 03:01:35 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26733 - LOGS_CAPTURED - Started capturing logs in process (pid: 26733).
+2023-05-25 03:01:35 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26732 - LOGS_CAPTURED - Started capturing logs in process (pid: 26732).
+2023-05-25 03:01:35 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26732 - make_reference - STEP_START - Started execution of step "make_reference".
+2023-05-25 03:01:35 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26733 - rename_output - STEP_START - Started execution of step "rename_output".
+2023-05-25 03:01:35 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - make_reference - Loading file from: /mnt/c/Users/sarta/Proger/bioinformatics/third-task/dagster-pipeline/dagster_pipeline/tmpgi_vfmz8/storage/3382e4b4-8cfc-4b79-8853-eb89af840fcf/fastqc/result
+2023-05-25 03:01:35 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - rename_output - Loading file from: /mnt/c/Users/sarta/Proger/bioinformatics/third-task/dagster-pipeline/dagster_pipeline/tmpgi_vfmz8/storage/3382e4b4-8cfc-4b79-8853-eb89af840fcf/fastqc/result
+2023-05-25 03:01:35 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26732 - make_reference - LOADED_INPUT - Loaded input "data" using input manager "io_manager", from output "result" of step "fastqc"
+2023-05-25 03:01:35 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26733 - rename_output - LOADED_INPUT - Loaded input "data" using input manager "io_manager", from output "result" of step "fastqc"
+2023-05-25 03:01:35 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26732 - make_reference - STEP_INPUT - Got input "data" of type "dict". (Type check passed).
+2023-05-25 03:01:35 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26733 - rename_output - STEP_INPUT - Got input "data" of type "Any". (Type check passed).
+mv: не удалось выполнить stat для '*.html': Нет такого файла или каталога
+2023-05-25 03:01:35 +0700 - dagster - INFO - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - make_reference - making reference for fna file
+2023-05-25 03:01:35 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26733 - rename_output - STEP_OUTPUT - Yielded output "result" of type "Nothing". (Type check passed).
+2023-05-25 03:01:35 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26733 - rename_output - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[M::mm_idx_gen::0.108*0.70] collected minimizers
+[M::mm_idx_gen::0.127*0.99] sorted minimizers
+[M::main::0.423*0.41] loaded/built the index for 1 target sequence(s)
+[M::mm_idx_stat] kmer size: 15; skip: 10; is_hpc: 0; #seq: 1
+[M::mm_idx_stat::0.431*0.42] distinct minimizers: 838542 (98.18% are singletons); average occurrences: 1.034; average spacing: 5.352; total length: 4641652
+[M::main] Version: 2.24-r1122
+[M::main] CMD: minimap2 -d ref.mmi third_stage.fna
+[M::main] Real time: 0.438 sec; CPU: 0.186 sec; Peak RSS: 0.085 GB
+2023-05-25 03:01:36 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26732 - make_reference - STEP_OUTPUT - Yielded output "result" of type "dict". (Type check passed).
+2023-05-25 03:01:36 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - make_reference - Writing file at: /mnt/c/Users/sarta/Proger/bioinformatics/third-task/dagster-pipeline/dagster_pipeline/tmpgi_vfmz8/storage/3382e4b4-8cfc-4b79-8853-eb89af840fcf/make_reference/result
+2023-05-25 03:01:36 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26732 - make_reference - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2023-05-25 03:01:36 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26732 - make_reference - STEP_SUCCESS - Finished execution of step "make_reference" in 625ms.
+2023-05-25 03:01:36 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26682 - index_genome - STEP_WORKER_STARTING - Launching subprocess for "index_genome".
+<dagster._core.definitions.composition.InvokedNodeOutputHandle object at 0x7fb1e73b5510>
+2023-05-25 03:01:37 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26756 - STEP_WORKER_STARTED - Executing step "index_genome" in subprocess.
+2023-05-25 03:01:37 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26756 - index_genome - RESOURCE_INIT_STARTED - Starting initialization of resources [io_manager].
+2023-05-25 03:01:37 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26756 - index_genome - RESOURCE_INIT_SUCCESS - Finished initialization of resources [io_manager].
+2023-05-25 03:01:37 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26756 - LOGS_CAPTURED - Started capturing logs in process (pid: 26756).
+2023-05-25 03:01:37 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26756 - index_genome - STEP_START - Started execution of step "index_genome".
+2023-05-25 03:01:37 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - index_genome - Loading file from: /mnt/c/Users/sarta/Proger/bioinformatics/third-task/dagster-pipeline/dagster_pipeline/tmpgi_vfmz8/storage/3382e4b4-8cfc-4b79-8853-eb89af840fcf/make_reference/result
+2023-05-25 03:01:37 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26756 - index_genome - LOADED_INPUT - Loaded input "data" using input manager "io_manager", from output "result" of step "make_reference"
+2023-05-25 03:01:37 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26756 - index_genome - STEP_INPUT - Got input "data" of type "dict". (Type check passed).
+2023-05-25 03:01:37 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26756 - index_genome - STEP_INPUT - Got input "output_file" of type "String". (Type check passed).
+2023-05-25 03:01:37 +0700 - dagster - INFO - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - index_genome - indexing the genome
+[M::main::0.319*0.21] loaded/built the index for 1 target sequence(s)
+[M::mm_mapopt_update::0.327*0.23] mid_occ = 12
+[M::mm_idx_stat] kmer size: 15; skip: 10; is_hpc: 0; #seq: 1
+[M::mm_idx_stat::0.334*0.25] distinct minimizers: 838542 (98.18% are singletons); average occurrences: 1.034; average spacing: 5.352; total length: 4641652
+[M::worker_pipeline::6.929*1.98] mapped 13760 sequences
+[M::main] Version: 2.24-r1122
+[M::main] CMD: minimap2 -a ref.mmi SRR24502286.fastq
+[M::main] Real time: 6.934 sec; CPU: 13.702 sec; Peak RSS: 0.618 GB
+2023-05-25 03:01:44 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26756 - index_genome - STEP_OUTPUT - Yielded output "result" of type "String". (Type check passed).
+2023-05-25 03:01:44 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - index_genome - Writing file at: /mnt/c/Users/sarta/Proger/bioinformatics/third-task/dagster-pipeline/dagster_pipeline/tmpgi_vfmz8/storage/3382e4b4-8cfc-4b79-8853-eb89af840fcf/index_genome/result
+2023-05-25 03:01:44 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26756 - index_genome - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2023-05-25 03:01:45 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26682 - make_flagstat - STEP_WORKER_STARTING - Launching subprocess for "make_flagstat".
+2023-05-25 03:01:45 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26682 - samtools_view - STEP_WORKER_STARTING - Launching subprocess for "samtools_view".
+<dagster._core.definitions.composition.InvokedNodeOutputHandle object at 0x7f20cdbb5510>
+<dagster._core.definitions.composition.InvokedNodeOutputHandle object at 0x7f9f277ad510>
+2023-05-25 03:01:45 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26770 - STEP_WORKER_STARTED - Executing step "make_flagstat" in subprocess.
+2023-05-25 03:01:46 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26771 - STEP_WORKER_STARTED - Executing step "samtools_view" in subprocess.
+2023-05-25 03:01:46 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26770 - make_flagstat - RESOURCE_INIT_STARTED - Starting initialization of resources [io_manager].
+2023-05-25 03:01:46 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26771 - samtools_view - RESOURCE_INIT_STARTED - Starting initialization of resources [io_manager].
+2023-05-25 03:01:46 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26770 - make_flagstat - RESOURCE_INIT_SUCCESS - Finished initialization of resources [io_manager].
+2023-05-25 03:01:46 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26771 - samtools_view - RESOURCE_INIT_SUCCESS - Finished initialization of resources [io_manager].
+2023-05-25 03:01:46 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26771 - LOGS_CAPTURED - Started capturing logs in process (pid: 26771).
+2023-05-25 03:01:46 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26770 - LOGS_CAPTURED - Started capturing logs in process (pid: 26770).
+2023-05-25 03:01:46 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26770 - make_flagstat - STEP_START - Started execution of step "make_flagstat".
+2023-05-25 03:01:46 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26771 - samtools_view - STEP_START - Started execution of step "samtools_view".
+2023-05-25 03:01:46 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - make_flagstat - Loading file from: /mnt/c/Users/sarta/Proger/bioinformatics/third-task/dagster-pipeline/dagster_pipeline/tmpgi_vfmz8/storage/3382e4b4-8cfc-4b79-8853-eb89af840fcf/index_genome/result
+2023-05-25 03:01:46 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - samtools_view - Loading file from: /mnt/c/Users/sarta/Proger/bioinformatics/third-task/dagster-pipeline/dagster_pipeline/tmpgi_vfmz8/storage/3382e4b4-8cfc-4b79-8853-eb89af840fcf/index_genome/result
+2023-05-25 03:01:46 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26770 - make_flagstat - LOADED_INPUT - Loaded input "alignment_file" using input manager "io_manager", from output "result" of step "index_genome"
+2023-05-25 03:01:46 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26771 - samtools_view - LOADED_INPUT - Loaded input "alignment_file" using input manager "io_manager", from output "result" of step "index_genome"
+2023-05-25 03:01:46 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26770 - make_flagstat - STEP_INPUT - Got input "alignment_file" of type "String". (Type check passed).
+2023-05-25 03:01:46 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26771 - samtools_view - STEP_INPUT - Got input "alignment_file" of type "String". (Type check passed).
+2023-05-25 03:01:46 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26771 - samtools_view - STEP_INPUT - Got input "output_file" of type "String". (Type check passed).
+2023-05-25 03:01:46 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26770 - make_flagstat - STEP_INPUT - Got input "output_file" of type "Any". (Type check passed).
+2023-05-25 03:01:46 +0700 - dagster - INFO - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - make_flagstat - making file for samtools flagstat
+2023-05-25 03:01:46 +0700 - dagster - INFO - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - samtools_view - making samtools view on alignment file
+2023-05-25 03:01:48 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26770 - make_flagstat - STEP_OUTPUT - Yielded output "result" of type "String". (Type check passed).
+2023-05-25 03:01:49 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - make_flagstat - Writing file at: /mnt/c/Users/sarta/Proger/bioinformatics/third-task/dagster-pipeline/dagster_pipeline/tmpgi_vfmz8/storage/3382e4b4-8cfc-4b79-8853-eb89af840fcf/make_flagstat/result
+2023-05-25 03:01:49 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26770 - make_flagstat - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2023-05-25 03:01:49 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26770 - make_flagstat - STEP_SUCCESS - Finished execution of step "make_flagstat" in 2.7s.
+2023-05-25 03:01:49 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26682 - check_percent - STEP_WORKER_STARTING - Launching subprocess for "check_percent".
+<dagster._core.definitions.composition.InvokedNodeOutputHandle object at 0x7fbe747b5510>
+2023-05-25 03:01:50 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26788 - STEP_WORKER_STARTED - Executing step "check_percent" in subprocess.
+2023-05-25 03:01:50 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26788 - check_percent - RESOURCE_INIT_STARTED - Starting initialization of resources [io_manager].
+2023-05-25 03:01:50 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26788 - check_percent - RESOURCE_INIT_SUCCESS - Finished initialization of resources [io_manager].
+2023-05-25 03:01:50 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26788 - LOGS_CAPTURED - Started capturing logs in process (pid: 26788).
+2023-05-25 03:01:50 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26788 - check_percent - STEP_START - Started execution of step "check_percent".
+2023-05-25 03:01:50 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - check_percent - Loading file from: /mnt/c/Users/sarta/Proger/bioinformatics/third-task/dagster-pipeline/dagster_pipeline/tmpgi_vfmz8/storage/3382e4b4-8cfc-4b79-8853-eb89af840fcf/make_flagstat/result
+2023-05-25 03:01:50 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26788 - check_percent - LOADED_INPUT - Loaded input "filename" using input manager "io_manager", from output "result" of step "make_flagstat"
+2023-05-25 03:01:50 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26788 - check_percent - STEP_INPUT - Got input "filename" of type "String". (Type check passed).
+2023-05-25 03:01:50 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26771 - samtools_view - STEP_OUTPUT - Yielded output "result" of type "String". (Type check passed).
+2023-05-25 03:01:50 +0700 - dagster - INFO - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - check_percent - checking percent
+2023-05-25 03:01:50 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - samtools_view - Writing file at: /mnt/c/Users/sarta/Proger/bioinformatics/third-task/dagster-pipeline/dagster_pipeline/tmpgi_vfmz8/storage/3382e4b4-8cfc-4b79-8853-eb89af840fcf/samtools_view/result
+2023-05-25 03:01:50 +0700 - dagster - INFO - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - check_percent - percent = 15644.0% - OK ✅✅✅
+2023-05-25 03:01:50 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26771 - samtools_view - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2023-05-25 03:01:50 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26771 - samtools_view - STEP_SUCCESS - Finished execution of step "samtools_view" in 4.21s.
+2023-05-25 03:01:50 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26788 - check_percent - STEP_OUTPUT - Yielded output "ok_result" of type "Any". (Type check passed).
+2023-05-25 03:01:50 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - check_percent - Writing file at: /mnt/c/Users/sarta/Proger/bioinformatics/third-task/dagster-pipeline/dagster_pipeline/tmpgi_vfmz8/storage/3382e4b4-8cfc-4b79-8853-eb89af840fcf/check_percent/ok_result
+2023-05-25 03:01:50 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26788 - check_percent - HANDLED_OUTPUT - Handled output "ok_result" using IO manager "io_manager"
+2023-05-25 03:01:50 +0700 - dagster - INFO - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - check_percent - op 'check_percent' did not fire outputs {'bad_result'}
+2023-05-25 03:01:50 +0700 - dagster - INFO - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - print_not_ok - Skipping step print_not_ok due to skipped dependencies: ['check_percent.bad_result'].
+2023-05-25 03:01:51 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26682 - print_not_ok - STEP_SKIPPED - Skipped execution of step "print_not_ok".
+2023-05-25 03:01:51 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26682 - print_ok - STEP_WORKER_STARTING - Launching subprocess for "print_ok".
+<dagster._core.definitions.composition.InvokedNodeOutputHandle object at 0x7f423f9b9510>
+2023-05-25 03:01:51 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26796 - STEP_WORKER_STARTED - Executing step "print_ok" in subprocess.
+2023-05-25 03:01:51 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26796 - print_ok - RESOURCE_INIT_STARTED - Starting initialization of resources [io_manager].
+2023-05-25 03:01:51 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26796 - print_ok - RESOURCE_INIT_SUCCESS - Finished initialization of resources [io_manager].
+2023-05-25 03:01:52 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26796 - LOGS_CAPTURED - Started capturing logs in process (pid: 26796).
+2023-05-25 03:01:52 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26796 - print_ok - STEP_START - Started execution of step "print_ok".
+2023-05-25 03:01:52 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - print_ok - Loading file from: /mnt/c/Users/sarta/Proger/bioinformatics/third-task/dagster-pipeline/dagster_pipeline/tmpgi_vfmz8/storage/3382e4b4-8cfc-4b79-8853-eb89af840fcf/check_percent/ok_result
+2023-05-25 03:01:52 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26796 - print_ok - LOADED_INPUT - Loaded input "ok" using input manager "io_manager", from output "ok_result" of step "check_percent"
+2023-05-25 03:01:52 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26796 - print_ok - STEP_INPUT - Got input "ok" of type "Any". (Type check passed).
+2023-05-25 03:01:52 +0700 - dagster - INFO - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - print_ok - 1
+2023-05-25 03:01:52 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26796 - print_ok - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
+2023-05-25 03:01:52 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - print_ok - Writing file at: /mnt/c/Users/sarta/Proger/bioinformatics/third-task/dagster-pipeline/dagster_pipeline/tmpgi_vfmz8/storage/3382e4b4-8cfc-4b79-8853-eb89af840fcf/print_ok/result
+2023-05-25 03:01:52 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26796 - print_ok - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2023-05-25 03:01:52 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26796 - print_ok - STEP_SUCCESS - Finished execution of step "print_ok" in 203ms.
+2023-05-25 03:01:52 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26682 - make_samtools_sort - STEP_WORKER_STARTING - Launching subprocess for "make_samtools_sort".
+<dagster._core.definitions.composition.InvokedNodeOutputHandle object at 0x7f9f5edb5510>
+2023-05-25 03:01:53 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26804 - STEP_WORKER_STARTED - Executing step "make_samtools_sort" in subprocess.
+2023-05-25 03:01:53 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26804 - make_samtools_sort - RESOURCE_INIT_STARTED - Starting initialization of resources [io_manager].
+2023-05-25 03:01:53 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26804 - make_samtools_sort - RESOURCE_INIT_SUCCESS - Finished initialization of resources [io_manager].
+2023-05-25 03:01:53 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26804 - LOGS_CAPTURED - Started capturing logs in process (pid: 26804).
+2023-05-25 03:01:53 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26804 - make_samtools_sort - STEP_START - Started execution of step "make_samtools_sort".
+2023-05-25 03:01:53 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - make_samtools_sort - Loading file from: /mnt/c/Users/sarta/Proger/bioinformatics/third-task/dagster-pipeline/dagster_pipeline/tmpgi_vfmz8/storage/3382e4b4-8cfc-4b79-8853-eb89af840fcf/print_ok/result
+2023-05-25 03:01:53 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26804 - make_samtools_sort - LOADED_INPUT - Loaded input "ok" using input manager "io_manager", from output "result" of step "print_ok"
+2023-05-25 03:01:53 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - make_samtools_sort - Loading file from: /mnt/c/Users/sarta/Proger/bioinformatics/third-task/dagster-pipeline/dagster_pipeline/tmpgi_vfmz8/storage/3382e4b4-8cfc-4b79-8853-eb89af840fcf/index_genome/result
+2023-05-25 03:01:53 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26804 - make_samtools_sort - LOADED_INPUT - Loaded input "alignment_file" using input manager "io_manager", from output "result" of step "index_genome"
+2023-05-25 03:01:53 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26804 - make_samtools_sort - STEP_INPUT - Got input "ok" of type "Any". (Type check passed).
+2023-05-25 03:01:53 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26804 - make_samtools_sort - STEP_INPUT - Got input "alignment_file" of type "String". (Type check passed).
+2023-05-25 03:01:53 +0700 - dagster - INFO - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - make_samtools_sort - sorting alignment file
+2023-05-25 03:01:57 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26804 - make_samtools_sort - STEP_OUTPUT - Yielded output "result" of type "String". (Type check passed).
+2023-05-25 03:01:57 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - make_samtools_sort - Writing file at: /mnt/c/Users/sarta/Proger/bioinformatics/third-task/dagster-pipeline/dagster_pipeline/tmpgi_vfmz8/storage/3382e4b4-8cfc-4b79-8853-eb89af840fcf/make_samtools_sort/result
+2023-05-25 03:01:57 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26804 - make_samtools_sort - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2023-05-25 03:01:57 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26682 - convert_sam_to_bam - STEP_WORKER_STARTING - Launching subprocess for "convert_sam_to_bam".
+<dagster._core.definitions.composition.InvokedNodeOutputHandle object at 0x7fd3f75b5510>
+2023-05-25 03:01:58 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26814 - STEP_WORKER_STARTED - Executing step "convert_sam_to_bam" in subprocess.
+2023-05-25 03:01:58 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26814 - convert_sam_to_bam - RESOURCE_INIT_STARTED - Starting initialization of resources [io_manager].
+2023-05-25 03:01:58 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26814 - convert_sam_to_bam - RESOURCE_INIT_SUCCESS - Finished initialization of resources [io_manager].
+2023-05-25 03:01:58 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26814 - LOGS_CAPTURED - Started capturing logs in process (pid: 26814).
+2023-05-25 03:01:58 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26814 - convert_sam_to_bam - STEP_START - Started execution of step "convert_sam_to_bam".
+2023-05-25 03:01:58 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - convert_sam_to_bam - Loading file from: /mnt/c/Users/sarta/Proger/bioinformatics/third-task/dagster-pipeline/dagster_pipeline/tmpgi_vfmz8/storage/3382e4b4-8cfc-4b79-8853-eb89af840fcf/make_samtools_sort/result
+2023-05-25 03:01:59 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26814 - convert_sam_to_bam - LOADED_INPUT - Loaded input "sorted_alignment_file" using input manager "io_manager", from output "result" of step "make_samtools_sort"
+2023-05-25 03:01:59 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26814 - convert_sam_to_bam - STEP_INPUT - Got input "sorted_alignment_file" of type "Any". (Type check passed).
+2023-05-25 03:01:59 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26814 - convert_sam_to_bam - STEP_INPUT - Got input "tmp" of type "Any". (Type check passed).
+2023-05-25 03:01:59 +0700 - dagster - INFO - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - convert_sam_to_bam - converting sam to bam format
+2023-05-25 03:02:03 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26814 - convert_sam_to_bam - STEP_OUTPUT - Yielded output "result" of type "String". (Type check passed).
+2023-05-25 03:02:03 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - convert_sam_to_bam - Writing file at: /mnt/c/Users/sarta/Proger/bioinformatics/third-task/dagster-pipeline/dagster_pipeline/tmpgi_vfmz8/storage/3382e4b4-8cfc-4b79-8853-eb89af840fcf/convert_sam_to_bam/result
+2023-05-25 03:02:03 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26814 - convert_sam_to_bam - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2023-05-25 03:02:03 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26814 - convert_sam_to_bam - STEP_SUCCESS - Finished execution of step "convert_sam_to_bam" in 4.04s.
+2023-05-25 03:02:03 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26682 - freebayes_run - STEP_WORKER_STARTING - Launching subprocess for "freebayes_run".
+<dagster._core.definitions.composition.InvokedNodeOutputHandle object at 0x7fb3b21b9510>
+2023-05-25 03:02:04 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26823 - STEP_WORKER_STARTED - Executing step "freebayes_run" in subprocess.
+2023-05-25 03:02:04 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26823 - freebayes_run - RESOURCE_INIT_STARTED - Starting initialization of resources [io_manager].
+2023-05-25 03:02:04 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26823 - freebayes_run - RESOURCE_INIT_SUCCESS - Finished initialization of resources [io_manager].
+2023-05-25 03:02:04 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26823 - LOGS_CAPTURED - Started capturing logs in process (pid: 26823).
+2023-05-25 03:02:04 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26823 - freebayes_run - STEP_START - Started execution of step "freebayes_run".
+2023-05-25 03:02:04 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - freebayes_run - Loading file from: /mnt/c/Users/sarta/Proger/bioinformatics/third-task/dagster-pipeline/dagster_pipeline/tmpgi_vfmz8/storage/3382e4b4-8cfc-4b79-8853-eb89af840fcf/convert_sam_to_bam/result
+2023-05-25 03:02:04 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26823 - freebayes_run - LOADED_INPUT - Loaded input "bam_alignment" using input manager "io_manager", from output "result" of step "convert_sam_to_bam"
+2023-05-25 03:02:04 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26823 - freebayes_run - STEP_INPUT - Got input "bam_alignment" of type "Any". (Type check passed).
+2023-05-25 03:02:04 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26823 - freebayes_run - STEP_INPUT - Got input "data" of type "Any". (Type check passed).
+2023-05-25 03:02:04 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26823 - freebayes_run - STEP_INPUT - Got input "output_file" of type "Any". (Type check passed).
+2023-05-25 03:02:04 +0700 - dagster - INFO - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - freebayes_run - running freebayes
+2023-05-25 03:02:04 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26823 - freebayes_run - STEP_OUTPUT - Yielded output "result" of type "String". (Type check passed).
+2023-05-25 03:02:04 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - freebayes_run - Writing file at: /mnt/c/Users/sarta/Proger/bioinformatics/third-task/dagster-pipeline/dagster_pipeline/tmpgi_vfmz8/storage/3382e4b4-8cfc-4b79-8853-eb89af840fcf/freebayes_run/result
+2023-05-25 03:02:04 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26823 - freebayes_run - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+2023-05-25 03:02:05 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26682 - ENGINE_EVENT - Multiprocess executor: parent process exiting after 39.29s (pid: 26682)
+2023-05-25 03:02:05 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26682 - RUN_SUCCESS - Finished execution of run for "run_job".
+2023-05-25 03:02:05 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26682 - RESOURCE_INIT_STARTED - Starting initialization of resources [io_manager].
+2023-05-25 03:02:05 +0700 - dagster - DEBUG - run_job - 3382e4b4-8cfc-4b79-8853-eb89af840fcf - 26682 - RESOURCE_INIT_SUCCESS - Finished initialization of resources [io_manager].
