@@ -86,7 +86,7 @@
     freebayes -f third_stage.fna sorted_alignments.filtered.bam > output.vcf
     ```
     
-#### Результат flagstat (он был выше, но я продублирую)
+### Результат flagstat (он был выше, но я продублирую)
    ```text
     15644 + 0 in total (QC-passed reads + QC-failed reads)
     13760 + 0 primary
