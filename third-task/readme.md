@@ -1,11 +1,13 @@
 # Result of work
 
 # Table of contents
-1. [Working in command line](#pipeline-with-arms--ruchki)
-2. [Writing bash script for list of commands](#writing-the-bash-script-to-make-the-commands-above)
-3. [Working with Dagster as pipeline creator tool]
-4. [How to make a new project and run it]
-5. [How to visualize the work]
+1. [Работаем с командной строкой](#делаем-пайплайн-руками-в-терминале)
+2. [Результат flagstat](#результат-flagstat--он-был-выше-но-я-продублирую-)
+3. [Bash-script для кое-какой автоматизации](#напишем-bash-скрипт-для-всей-последовательности-сверху)
+4. [Создание нового проекта на Dagster](#создаем-новый-проект-с-помощью-dagster)
+5. [Первая программа](#первая-программа-hello-world)
+6. [Реализуемая программа](#реализуемая-программа)
+7. [Визуализация пайплайна](#visualisation-of-pipeline)
 
 ### Ссылка на ген
    E.coli link - [link to run](https://www.ncbi.nlm.nih.gov/sra/SRX20287202[accn])
