@@ -1,0 +1,7 @@
+Using temporary directory /mnt/c/Users/sarta/Proger/bioinformatics/third-task/dagster-pipeline/tmpbuio2qiz for storage. This will be removed when ``dagster job execute`` exits.
+To persist information across sessions, set the environment variable DAGSTER_HOME to a directory to use.
+Hello world from Dagster!
+2023-05-24 01:21:07 +0700 - dagster - DEBUG - say_hello - 2e474318-9011-4c99-afde-c98b6eb1332c - 10574 - RUN_START - Started execution of run for "say_hello".
+2023-05-24 01:21:07 +0700 - dagster - DEBUG - say_hello - 2e474318-9011-4c99-afde-c98b6eb1332c - 10574 - ENGINE_EVENT - Executing steps using multiprocess executor: parent process (pid: 10574)
+2023-05-24 01:21:07 +0700 - dagster - DEBUG - say_hello - 2e474318-9011-4c99-afde-c98b6eb1332c - 10574 - ENGINE_EVENT - Multiprocess executor: parent process exiting after 0.04ms (pid: 10574)
+2023-05-24 01:21:07 +0700 - dagster - DEBUG - say_hello - 2e474318-9011-4c99-afde-c98b6eb1332c - 10574 - RUN_SUCCESS - Finished execution of run for "say_hello".
