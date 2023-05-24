@@ -115,7 +115,7 @@ def freebayes_run(context, bam_alignment='alignment.bam', data=None, output_file
     if data is None:
         data = {'fna': 'third_stage.fna'}
     context.log.info("running freebayes")
-    # subprocess.run(['freebayes', '-f', data['fna'], bam_alignment], stdout=open(output_file, 'w'))
+    subprocess.run(['freebayes', '-f', data['fna'], bam_alignment], stdout=open(output_file, 'w'))
     return output_file
 
 

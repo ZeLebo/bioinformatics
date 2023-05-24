@@ -7,21 +7,21 @@
 4. [How to make a new project and run it]
 5. [How to visualize the work]
 
-### References
+### Ссылка на ген
    E.coli link - [link to run](https://www.ncbi.nlm.nih.gov/sra/SRX20287202[accn])
 
-### Mnogo files
+### Много файлов
 ![alt-text](mnogo_fails.jpg)
 
-### Pipeline with arms (ruchki)
+### Делаем пайплайн руками в терминале
 
-1. Download all the data
-2. Run the fastqc command on fastqc file
+1. Скачиваем данные
+2. Запускаем `fastqc` команду на fastqc файле
     ```bash
     fastqc SRR24502286.fastq
     mv *.html qcreport.html
     ```
-3. Index the genome
+3. Индексируем геном
     ```bash
     minimap2 -d <prefix.mmi> <reference.fasta>
     minimap2 -d ref.mmi third_stage.fna
@@ -29,15 +29,16 @@
     # indexing with reference
     minimap2 -a ref.mmi SRR24502286.fastq > alignment.sam
     ```
-4. Make samtools view
+4. Выполняем команду samtools view
     ```bash
     samtools view alignment.sam
     ```
-5. Make a txt file for flagstat.txt
+5. Генерируем файл через команду
     ```bash
     samtools flagstat alignment.sam > flagstat.txt
     ```
-6. Write a bash script to extract percent from the file
+   [result](pishem_ruchkami/flagstat.txt)
+6. Небольшой bash-скрипт, чтобы вытаскивать процент из файла
     ```bash
 
     #!/bin/bash
@@ -64,26 +65,26 @@
     echo $result
 
     ```
-7. Make samtools sort
+7. Сортируем последовательность
     ```bash
     samtools sort -o sorted_alignment.sam alignment.sam
     ```
-8. Make samtoos faidx
+8. Делаем .fai файл самостоятельно (а то мало ли)
     ```bash
     samtools faidx third_stage.fna
     ```
-9. Convert sam to bam
+9. Конвертируем .sam файл в .bam для дальнейшей генерации вариантов генов
    ```bash
    samtools view -bS -o alignment.bam alignment.sam
    # sort again, but for bam
    samtools sort -o sorted_alignments.bam alighment.bam
    ```
-10. Run freebayes
+10. Запускаем freebayes
     ```bash
     freebayes -f third_stage.fna sorted_alignments.filtered.bam > output.vcf
     ```
     
-#### Result of flagstat
+#### Результат flagstat (он был выше, но я продублирую)
    ```text
     15644 + 0 in total (QC-passed reads + QC-failed reads)
     13760 + 0 primary
@@ -102,25 +103,25 @@
     0 + 0 with mate mapped to a different chr
     0 + 0 with mate mapped to a different chr (mapQ>=5)
    ```
-### Writing the bash script to make the commands above
+### Напишем bash-скрипт для всей последовательности сверху
 
-I've writen a simple bash script to run the commands above -> [bash script](./bash_script/manual.sh).
+Код самого скрипта -> [bash script](./bash_script/manual.sh).
 
-Need to mention: before starting the script need to install packages to linux system
+Важно: до того как запускать скрипт нужно установить зависимости в систему
 ```bash
     sudo apt-get install samtools, minimap2, fastqc
 ```
 
-### Creating new project with DugsterIO
-In order to start a new project we need to install the dagster on your system:
+### Создаем новый проект с помощью Dagster
+Для начала нужно установить dagster в систему
 ```bash
     pip3 install dagster dagit
 ```
-After this we can create new project with Dagster
+После этого можно инициализировать новый проект
 ```bash
     dagster project scaffold --name <name-of-your-project>
 ```
-Then we can navigate to the new-created folder and find setup.py file:
+После этого переходим в созданную папку и ищем setup.py файл:
 ```python
 from setuptools import find_packages, setup
 
@@ -134,14 +135,19 @@ setup(
     extras_require={"dev": ["dagit", "pytest"]},
 )
 ```
-in section `install_requires=[]` we can add our needed packages for further working.
+В секции `install_requires=[]` можно добавить необходимые компоненты для дальнейшей работы кода.
 
-To install the dependencies run the following command:
+Чтобы установить все зависимости можно воспользоваться коммандой:
 ```bash
     pip3 install -e ".[dev]"
 ```
-### First program to print `hello world`
-Now let's create a new file `say_hello_pipeline.py` in <name-of-your-project> folder and put this as content:
+### Первая программа `hello world`
+
+В коде вы можете декорировать фукнции с помощью 2 декораторов:
+- `@op` - аннотация для обозначения минимальной логической ноды в последовательности действий (Unit)
+- `@job` - аннотация для обозначения функций, которые будут выполнять несколько `@op's`
+
+Теперь создадим новый файл `say_hello_pipeline.py` в <name-of-your-project> папке и напишем в него следующее содержимое:
 ```python
 from dagster import job
 
@@ -152,43 +158,53 @@ def say_hello():
 if __name__ == '__main__':
     say_hello()
 ```
-And run this file as follows:
+Чтобы запустить этот код можно воспользоваться этой командой:
 ```bash
   dagster job execute -f <name-of-your-project>/say_hello_pipeline.py > output.txt
 ```
-And here's the output file: [output.txt](dagster-pipeline/output.txt)
+Тут можно найти логи вывода этой команды: [output.txt](dagster-pipeline/output.txt)
 
-Need to mention that you cannot pass `None` as default param in your function, so instead of
+Важно: при обозначении дефолтного значения входных параметров фукнции через `None` может возникнуть ошибка, поэтому вместо такого кода 
 ```python
 def foo(name = None): # it will fail at start due to NoneClass Exception
     if name is None:
       name = "aaa"
     ...
 ```
-write this
+Лучше написать такой
 ```python
 def foo(name="aaa"):
     ...
 ```
-### The needed program
-You can see the code of `pipeline` here -> [code](dagster-pipeline/dagster_pipeline/pipeline.py)
+### Реализуемая программа
+Код `pipeline` можно посмотреть тут -> [code](dagster-pipeline/dagster_pipeline/pipeline.py)
 
-The result of work is here -> [result in vcf format](dagster-pipeline/dagster_pipeline/output.vcf)
+Результат работы можно найти тут -> [result in vcf format](dagster-pipeline/dagster_pipeline/output.vcf)
 
-The logs can be found here -> [logs of running command](dagster-pipeline/dagster_pipeline/logs.txt)
+Логи выполнения работы тут -> [logs of running command](dagster-pipeline/dagster_pipeline/logs.txt)
+
+Для запуска и получения результата запустите следующую команду:
+```bash
+   cd dagster-pipeline/dagster_pipeline
+   dagster job execute -f pipeline.py
+```
 
 ### Visualisation of pipeline
-You can visualize the pipeline when running command:
+Чтобы визуализировать пайплайн можно запустит команду:
 ```bash
    dagit -f <name-of-your-file>.py
 ```
-I have this result:
-![photo](dagster_photo.jpg)
-(yeap, dugster creating new description for job itself)
+И перейти на `localhost:3030`
 
-As always, dagster will build up the graph based on the sequence of parameters you're passing in your code.
-So, if you write code similar to this:
+У меня получился следующий результат:
+
+![photo](dagster_photo.jpg)
+(Dagster сам может сгенерировать последовательность выполнения `op`, которые можно найти во вкладке `jobs`)
+
+Dagster строит дерево на основании передаваемых результатов между функциями, а не на основании стека их вызовов, поэтому если написать такой код
 ```python
+@job
+def foo():
     retrieve_files()
     fastqc()
     rename_output()
@@ -197,9 +213,11 @@ So, if you write code similar to this:
     samtools_view()
     make_flagstat()
 ```
-You will end up with only nodes of graph that are not connected to each other in any way,
-in order to get the links you need to specify the output data and input data, so the code would be smth like this:
+Вы получите несвязанные ноды в графе.
+Чтобы получить свои связи в нодах, нужно передавать значения между функциями (примерно так):
 ```python
+@job
+def foo():
     data = retrieve_files()
     data1 = fastqc(data)
     rename_output(data1)
@@ -211,5 +229,6 @@ in order to get the links you need to specify the output data and input data, so
     ok1 = print_ok(ok)
     print_not_ok(not_ok)
 ```
-
-So the visualisation of pipeline is basically a creativity task (by default all python function return None, so you can pass this `None` to the next function and get the beautiful graph)
+Так как блоки связываются описанным выше способом, задача становится больше креативной.
+Можно даже использовать некоторые "грязные хаки": функции в питоне по дефолту возвращают `None`, поэтому его можно использовать как результат выполнения функций и передавать дальше, чтобы строить граф.
+Среди отличий от схемы можно выделить другие имена нод, потому что они берутся из имен функций в python
