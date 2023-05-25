@@ -11,6 +11,7 @@
 
 ### Ссылка на ген
    E.coli link - [link to run](https://www.ncbi.nlm.nih.gov/sra/SRX20287202[accn])
+   Референсный ген - [ссылка](https://www.ncbi.nlm.nih.gov/assembly/GCF_000005845.2/)
 
 ### Много файлов
 ![alt-text](mnogo_fails.jpg)
