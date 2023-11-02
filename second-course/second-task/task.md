@@ -52,5 +52,5 @@
     ![alt-text](attachments/export_error.png "Error export")
 
 - Получается экспортировать в форматах `PIC` и `RGB`
-	- PIC - (test.pic)
-	- RGB - (test.rgb)
+	- PIC - [pic format file](test.pic)
+	- RGB - [rgb format file](test.rgb)
