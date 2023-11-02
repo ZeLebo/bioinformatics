@@ -54,3 +54,5 @@
 - Получается экспортировать в форматах `PIC` и `RGB`
 	- PIC - [pic format file](test.pic)
 	- RGB - [rgb format file](test.rgb)
+
+![alt-text](attachments/Untitled.png "Типа картинка публикационного качетсва")
