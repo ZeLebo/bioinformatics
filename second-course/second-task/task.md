@@ -1,11 +1,12 @@
 # Вводная инфа
 Название: 8g05
+
 Источник: (https://www.rcsb.org/structure/8G05)
 
 # Изображения белка
 ## Wireframe
 
-![[attachments/Pasted image 20231102182805.png]]
+![alt-text](attachments/Pasted image 20231102182805.png)
 
 ## Backbone
 
