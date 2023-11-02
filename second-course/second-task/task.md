@@ -48,7 +48,9 @@
 	
 # Изображение белка публикационного качества
 - Приложение не хочет давать картинку, потому что она слишком большая
-	![alt-text](attachments/export_error.png "Error export")
+	
+    ![alt-text](attachments/export_error.png "Error export")
+
 - Получается экспортировать в форматах `PIC` и `RGB`
 	- PIC - (test.pic)
 	- RGB - (test.rgb)
