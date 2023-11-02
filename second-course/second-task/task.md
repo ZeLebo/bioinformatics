@@ -22,15 +22,15 @@
 
 ## Molecular surface
 
-![[attachments/Pasted image 20231102182937.png]]
+![alt-text](attachments/molecular.png "Molecular surface")
 
 ## Цветовая модель CPK
 
-![[attachments/Pasted image 20231102183007.png]]
+![alt-text](attachments/cpk.png "CPK")
 
 ## Раскраска по доменам
 
-![[attachments/Pasted image 20231102183338.png]]
+![alt-text](attachments/domens.png "Domens")
 
 # Описание получения визуализации
 
@@ -38,17 +38,17 @@
 2. Открываем приложение (запускается 2 окна: GUI и терминал)
 3. В терминале пишем `load <path-to-file>`
 	
-	![[attachments/Pasted image 20231102183456.png]]
+	![alt-text](attachments/terminal.png "Terminal")
 4. В GUI видим изображение белка
 5. В верхней панели выбираем нужные параметры
 	
-	![[attachments/Pasted image 20231102183654.png]]
+	![alt-text](attachments/options1.png "Options1")
 	
-	![[attachments/Pasted image 20231102183704.png]]
+    ![alt-text](attachments/options2.png "Options2")
 	
 # Изображение белка публикационного качества
 - Приложение не хочет давать картинку, потому что она слишком большая
-	![[attachments/Pasted image 20231102183821.png]]
+	![alt-text](attachments/export_error.png "Error export")
 - Получается экспортировать в форматах `PIC` и `RGB`
-	- PIC - 
-	- RGB - 
+	- PIC - (test.pic)
+	- RGB - (test.rgb)
