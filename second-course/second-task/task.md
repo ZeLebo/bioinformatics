@@ -6,7 +6,7 @@
 # Изображения белка
 ## Wireframe
 
-![alt-text](attachments/Pasted image 20231102182805.png)
+![alt-text]("attachments/Pasted image 20231102182805.png")
 
 ## Backbone
 
