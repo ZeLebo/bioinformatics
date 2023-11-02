@@ -6,19 +6,19 @@
 # Изображения белка
 ## Wireframe
 
-![alt-text]("attachments/Pasted image 20231102182805.png")
+![alt-text](attachments/wireframe.png "Wireframe")
 
 ## Backbone
 
-![[attachments/Pasted image 20231102182817.png]]
+![alt-text](attachments/backbone.png "Backbone")
 
 ## Spacefill
 
-![[attachments/Pasted image 20231102182827.png]]
+![alt-text](attachments/spacefill.png "Spacefill")
 
-## Ribbos
+## Ribbons
 
-![[attachments/Pasted image 20231102182839.png]]
+![alt-text](attachments/ribbons.png "Ribbons")
 
 ## Molecular surface
 
