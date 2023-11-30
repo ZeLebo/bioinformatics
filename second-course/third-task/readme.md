@@ -2,7 +2,7 @@
 
     - Первичная последовательность белка: `MDADVISFEASRGDLVVLDAIHDARFETEAGPGVYDIHSPRIPSEKEIEDRIYEILDKIDVKKVWINPDCGLKTRGNDETWPSLEHLVAAAKAVRARLDK`
     - Инструмент 1 фолдинга: `ESMFold` [collab](https://colab.research.google.com/github/sokrypton/ColabFold/blob/main/ESMFold.ipynb#scrollTo=boFQEwsNQ4Qt)
-    - Инструмент 2 фолдинга: `OpenFold` [collab](https://colab.research.google.com/github/sef43/openfold/blob/main/notebooks/OpenFold.ipynb)
+    - Инструмент 2 фолдинга: `OpenFold` [collab](https://colab.research.google.com/github/aqlaboratory/openfold/blob/main/notebooks/OpenFold.ipynb)
     - Инструмент парного выравнивания: `ProBiS`
 
 2. **Полученные ноутбуки с предсказанной структурой**
