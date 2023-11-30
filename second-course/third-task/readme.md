@@ -1,11 +1,8 @@
 1. Последовательность, названия программ-предсказателей и программы-выравнивателя:
 
     - Первичная последовательность белка: `MDADVISFEASRGDLVVLDAIHDARFETEAGPGVYDIHSPRIPSEKEIEDRIYEILDKIDVKKVWINPDCGLKTRGNDETWPSLEHLVAAAKAVRARLDK`
-
     - Инструмент 1 фолдинга: `ESMFold`
-
     - Инструмент 2 фолдинга: `OpenFold`
-
     - Инструмент парного выравнивания: `ProBiS`
 
 2. Полученные ноутбуки с предсказанной структурой
